@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="../css/mystyle.css">
+<script src="../js/contact.js"></script>
+<script src="../js/common.js"></script>
+
+<html>
+    <title>Contact</title>
+    <div class="headerClassGeneric centeredText">
+        <p>
+            <span class="headerTitle">
+                Contact
+            </span>
+        </p>
+    </div>
+        
+    <div class="NavBar fontSerif">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href='flights.php'>Flights</a></li>
+            <li><a href="hotels.php">Hotels</a></li>
+            <li><a href="cars.php">Rental Cars</a></li>
+            <li class="liLastChild"><a class="active" href="#Contact">Contact</a></li>
+            <li class="liLastChild"><a href="orderstatus.php">Order Status</a></li>
+            <li><a href="./specialoffers.html">Special Offers</a></li>
+            <li><a href="/mycart.php">Cart</a></li>
+        </ul>
+    </div>
+
+    <div class="centerSection footer-columns">
+        <div class="centerSectionCol1">
+            <h3>Comments:</h3>
+            <ul>
+                <li>JSON is created in the backend and displayed as alert.</li><br>
+            </ul>
+        </div>
+
+        <div class="centerSectionCol2">
+
+              <form onsubmit="validateForm()">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <br>
+            
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <br>
+            
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                <br>
+            
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male"> Male
+                <input type="radio" id="female" name="gender" value="female"> Female
+                <br>
+            
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+            
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <br>
+            
+                <button type="submit">Submit to create JSON</button>
+              </form>
+
+        </div>
+    </div>
+
+    <footer class="footer" >
+        <p>In partial fulfillment of <strong> CS6314 Web Programming Languages Summer 2023</strong> at The University of Texas at Dallas, Richardson, TX</p>
+        <p>By Shalini Gautam (SXG220033) and Srikar GSKP (SXS210570)</p>
+        </footer>
+    
+</html>

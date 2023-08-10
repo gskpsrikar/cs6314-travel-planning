@@ -1,0 +1,62 @@
+.centerSectionColumn2 {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 1;
+    width: 75vw;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 2px;
+    font-size: 14;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+}
+
+.hotelsHeader {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-style: inherit;
+    font-weight: bold;
+    position: relative;
+}
+
+.formBoldFontWeight {
+    font-weight: bold;
+}
+
+.formFontStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+th {
+background-color: #f2f2f2;
+}
+
+.cart-icon {
+float: right;
+cursor: pointer;
+}
+
+.cart {
+display: none;
+margin-top: 20px;
+padding: 10px;
+background-color: #f2f2f2;
+}

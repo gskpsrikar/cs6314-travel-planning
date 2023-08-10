@@ -1,0 +1,21 @@
+/* styles.css */
+body {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+#offerContainer {
+    margin-top: 20px;
+}

@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="../css/mystyle.css">
+
+<link rel="stylesheet" href="../css/rentalcars.css">
+<script src="../js/common.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<html>
+    <title>Rental Cars</title>
+    <div class="headerClassGeneric centeredText">
+        <p>
+            <span class="headerTitle">
+                Rental Cars
+            </span>
+        </p>
+    </div>
+        
+    <div class="NavBar fontSerif">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href='./flights.html'>Flights</a></li>
+            <li><a href="./hotels.html">Hotels</a></li>
+            <li><a class="active" href="#rentalcars">Rental Cars</a></li>
+            <li class="liLastChild"><a href="./contact.html">Contact</a></li>
+            <li class="liLastChild"><a href="./orderstatus.html">Order Status</a></li>
+            <li><a href="./specialoffers.html">Special Offers</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="centerSection footer-columns">
+        <div class="centerSectionCol1">
+            <h3>Instructions:</h3>
+            <ul>
+                <li>To change a selection: First deselect the existing selection and then select a new one.</li><br>
+                <li>To add selection to cart: Click on the green cart button, after selection is complete.</li><br>
+                <li>By default, cart shows details from the previous selection (if any). It will be updated when new selections are finished properly.</li>
+            </ul>
+            <h3>Comments:</h3>
+            <ul>
+                <li>The table at the bottom is static.</li><br>
+            </ul>
+        </div>
+
+        <div class="centerSectionColumn2">
+            <div class="formFontStyle foreground">
+            <h2>Choose Rental Cars</h2>
+
+            <label for="city" class="formBoldFontWeight">City:</label>
+            <input type="text" id="city" name="city" class="inputFieldStyle">
+
+            <label for="checkInDate" class="formBoldFontWeight">Rent-start Date:</label>
+            <input type="date" id="checkInDate" name="checkInDate" class="inputFieldStyle">
+
+            <label for="checkOutDate" class="formBoldFontWeight">Drop Date:</label>
+            <input type="date" id="checkOutDate" name="checkOutDate" class="inputFieldStyle">
+            
+            <button id="bookButton" onclick="validateDates()" class="submit-button">
+                Show Cars
+            </button>
+            </div>
+            
+            <div id="tableDiv"></div>
+            <br><br>
+            <p>Click the cart button to add your selection to cart. To change selection, first deselect an existing 
+                selection and then select a new preference.
+            </p>
+            
+            <div id="add_to_cart" class="formFontStyle foreground">
+            </div>
+            <hr>
+            <div id="cart_information">
+                <button id="bookButton" onclick="$displayCart()" class="submit-button">
+                    Show Cart Details
+                </button>
+                <p id="onward_flight_info_in_cart"></p>
+                <p id="return_flight_info_in_cart"></p>
+                <p id="hotel_info_in_cart"></p>
+                <p id="car_info_in_cart"></p>
+                <h4 id="price_info_in_cart"></h4>
+            </div>
+            <hr>
+            <h3>Output of the parsed XML (static content): </h3>
+            <div id="dummyTableDiv"></div>
+
+        </div>
+        
+    </div>
+    <script src="../js/rentalcarsbook.js"></script>
+    <footer class="footer">
+        <h3>Student Details</h3>
+            First Name: Srikar <br>
+            Last Name: GSKP <br>
+            Net ID: SXS210570
+    </footer>
+    
+</html>
